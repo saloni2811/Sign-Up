@@ -63,6 +63,6 @@ app.post("/failure" ,function(req,res){
 
 
 
-app.listen(5500 , function(){
+app.listen(process.env.PORT || 5500 , function(){
     console.log("server is running at port 5500");
 });
